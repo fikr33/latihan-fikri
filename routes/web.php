@@ -45,3 +45,42 @@ Route::get('/bb/{hh}/{yy}/{tt}', function ($a,$b,$c) {
 Route::get('/nama/{john}', function ($r=john) {
     return 'about'.$r='john';
 });
+
+Route::get('/testmodel',function(){
+    $e=App\Post::all();
+    return $e;
+});
+
+Route::get('/testmodel1',function(){
+    $e=App\Post::find(1);
+    return $e;
+});
+
+Route::get('/testmodel2',function(){
+    $e=App\Post::where('title','like','%Keluarga%')->get();
+    return $e;
+});
+
+Route::get('/testmodel3',function(){
+$post=App\Post::find(1);
+$post->title="Ciri Keluarga";
+$post->save();
+return $post;
+});
+
+Route::get('/testmodel4',function(){
+$post=App\Post::find(1);
+$post->delete();
+});
+
+Route::get('/testmodel5',function(){
+$post= new App\Post;
+$post->title="Orang Ganteng & Orang Tampann :";
+$post->content="Fikri Purqon Azis";
+$post->save();
+return $post;
+});
+
+Route::get('/cektampilan',function(){
+    return view('layouts.master');
+});

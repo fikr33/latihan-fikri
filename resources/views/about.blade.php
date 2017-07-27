@@ -1,9 +1,4 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>latih</title>
-</head>
-<body>
- Assalaamualaikum 
-</body>
-</html>
+@extends('layouts.master')
+@section('isi')
+ <h1>Assalaamualaikum</h1>
+@endsection
