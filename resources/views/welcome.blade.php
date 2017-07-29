@@ -79,15 +79,15 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Laravel
+                    intan dapat salamdari jupe
                 </div>
 
                 <div class="links">
-                    <a href="https://laravel.com/docs">Documentation</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
+                    <a href="https://laravel.com/docs">Docukosong</a>
+                    <a href="https://laracasts.com">Laranying</a>
+                    <a href="https://laravel-news.com">Newbie</a>
+                    <a href="https://forge.laravel.com">Forno</a>
+                    <a href="https://github.com/laravel/laravel">Gitting</a>
                 </div>
             </div>
         </div>

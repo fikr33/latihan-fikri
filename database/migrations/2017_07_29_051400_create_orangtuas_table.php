@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreatePostsTable extends Migration
+class CreateOrangtuasTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,10 +13,14 @@ class CreatePostsTable extends Migration
      */
     public function up()
     {
-        Schema::create('posts', function (Blueprint $table) {
+        Schema::create('orangtuas', function (Blueprint $table) {
             $table->increments('id');
             $table->string('title')->unique();
-            $table->string('content');
+            $table->string('nama_ibu');
+            $table->string('nama_ayah');
+            $table->string('umur_ibu');
+            $table->string('umur_ayah');
+            $table->string('alamat');
             $table->timestamps();
         });
     }
@@ -28,6 +32,6 @@ class CreatePostsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('posts');
+        Schema::dropIfExists('orangtuas');
     }
 }
