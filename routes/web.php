@@ -110,3 +110,8 @@ Route::get('/beda4', 'mycontroller@percobaan');
 Route::resource('orangtua','OrangtuaController');
 
 Route::resource('siswa','SiswaController');
+
+Route::resource('author','AuthorController');
+Auth::routes();
+
+Route::get('/home', 'HomeController@index');
