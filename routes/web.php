@@ -108,3 +108,5 @@ Route::get('/beda3', 'mycontroller@tampilview');
 Route::get('/beda4', 'mycontroller@percobaan');
 
 Route::resource('orangtua','OrangtuaController');
+
+Route::resource('siswa','SiswaController');
